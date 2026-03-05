@@ -1,0 +1,94 @@
+/* Global Styles */
+:root {
+    --primary-color: #774936;
+    --primary-color-intermediary: #c2866c;
+    --secondary-color: #ac5a38;
+    --primary-color-intermediary: #a1705b ;
+    --accent-color: #e74c3c;
+    --maccent-color: #d86457;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --mdark-color: #cecece;
+}
+
+body {
+    background-color: var(--light-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.container-fluid {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../imgs/cozinha.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.text-primary {
+    color: var(--light-color) !important;
+}
+
+.table-dark {
+    background-color: var(--primary-color-intermediary) !important;
+    border: var(--primary-color-intermediary);
+}
+
+.text-secondary {
+    color: var(--primary-color) !important;
+}
+
+.badge-primary {
+    background-color: var(--mdark-color) !important;
+}
+
+h5, p {
+    color: var(--dark-color) !important;
+}
+
+.img-fluid {
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.img-fluid:hover {
+    transform: translateY(-10px);
+}
+
+.bg-dark {
+    background-color: var(--primary-color) !important;
+    color: var(--light-color) !important;
+}
+
+.btn-primary {
+    background-color:var(--primary-color) ;
+    border: var(--primary-color) ;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+.btn-secondary {
+    background-color: var(--accent-color);
+    border: var(--accent-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--maccent-color);
+}
