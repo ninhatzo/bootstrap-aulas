@@ -1,5 +1,16 @@
+/*Global style*/
+:root {
+  --primary-color: #7DCDFF;
+  --secondary-color: #1ba8ff;
+  --terciary-color: #065f97;
+  --light-color: #fff;
+  --primary-gradiente: #E6E6E6;
+  --secondary-gradiente: #AAE6FF;
+}
+
+
 body {
-    background-color: #f8f9fa;
+  background: linear-gradient(to bottom, var(--primary-gradiente) , var(--secondary-gradiente));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,10 +18,19 @@ body {
   }
 
   .login-container {
-    background-color: #fff;
+    background-color: var(--light-color);
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 0 20px 20px 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .banner {
+    background-color: var(--primary-color);
+    border-radius: 20px 0 0 20px;
+  }
+
+  .banner2 {
+    background-color: var(--primary-color);
   }
 
   .login-title {
@@ -27,3 +47,26 @@ body {
   .btn-primary {
     border-radius: 20px;
   }
+
+  .nav-link {
+    font-size: 1.2rem;
+    color: var(--secondary-color) !important;
+}
+
+.nav-link:hover {
+  font-size: 1.2rem;
+  color: var(--terciary-color) !important;
+}
+
+p {
+  text-align: center;
+}
+
+p.align-items-center {
+  background-color: #d6d6d6;
+  border-radius: 10px;
+}
+
+.container {
+  background-color: #eeeeee;
+}
